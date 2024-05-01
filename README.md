@@ -25,7 +25,10 @@ Things you may want to cover:
 
 rails new ecommerce_webhooks
 rails g model Product name:string price:decimal
+rails g migration CreateOrders customer:references product:references quantity:integer total_price:decimal
+
 rails g model Order customer_id:integer product_id:integer quantity:integer total_price:decimal
+
 rails g model Customer name:string email:string address:string
 
 rails g controller Products
